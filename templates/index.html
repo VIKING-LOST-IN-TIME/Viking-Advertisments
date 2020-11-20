@@ -1,0 +1,36 @@
+{% extends 'layouts/base.html' %}
+{% import 'macros/validation.html' as validation %}
+
+{% block content %}
+    <div class="container">
+        <h1>Advertisements</h1>
+
+        <form method="POST">
+            <h3>Left</h3>
+            <div class="form-group">
+                {{ form.left_advertisement_url.label }}
+                {{ form.left_advertisement_url() }}
+                {{ validation.error(form.left_advertisement_url.errors) }}
+            </div>
+            <div class="form-group">
+                {{ form.left_advertisement_image.label }}
+                {{ form.left_advertisement_image() }}
+                {{ validation.error(form.left_advertisement_image.errors) }}
+            </div>
+
+            <h3>Right</h3>
+            <div class="form-group">
+                {{ form.right_advertisement_url.label }}
+                {{ form.right_advertisement_url() }}
+                {{ validation.error(form.right_advertisement_url.errors) }}
+            </div>
+            <div class="form-group">
+                {{ form.right_advertisement_image.label }}
+                {{ form.right_advertisement_image() }}
+                {{ validation.error(form.right_advertisement_image.errors) }}
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+{% endblock %}
