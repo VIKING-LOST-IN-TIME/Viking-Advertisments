@@ -6,7 +6,6 @@ Simple website form to fill advertisements for the Viking: Lost in Time game.
 - pip packages
 - - flask
 - - flask-wtf
-- - python-dotenv
 
 ## Getting Started
 1. Clone this repository.
