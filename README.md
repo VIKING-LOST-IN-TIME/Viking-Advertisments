@@ -2,7 +2,7 @@
 Simple website form to fill advertisements for the Viking: Lost in Time game.
 
 ## Prerequisites
-- virtualenvironment (venv)
+- virtual environment (venv)
 - pip packages
 - - flask
 - - flask-wtf
