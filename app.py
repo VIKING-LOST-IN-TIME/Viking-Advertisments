@@ -4,7 +4,7 @@ from templates.forms import CreateAdvertisementForm
 
 app = Flask(__name__)
 app.secret_key = 'sU5erS3cR3T!'
-hostname = "foolen.dev"
+hostname = "tiki.network:5000"
 
 
 @app.route('/', methods=["GET", "POST"])
@@ -47,12 +47,12 @@ def data():
         return jsonify({
             'advertisements': {
                 'left': {
-                    'url': "https://" + hostname,
-                    'image': "https://" + hostname + "/static/images/post-left.png"
+                    'url': "http://example.com",
+                    'image': "http://" + hostname + "/static/images/poster-left.png"
                 },
                 'right': {
-                    'url': "https://" + hostname,
-                    'image': "https://" + hostname + "/static/images/post-right.png"
+                    'url': "http://example.com",
+                    'image': "http://" + hostname + "/static/images/poster-right.png"
                 }
             }
         })
